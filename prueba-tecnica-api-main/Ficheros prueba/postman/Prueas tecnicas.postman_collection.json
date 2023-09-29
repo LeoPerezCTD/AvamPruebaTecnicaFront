@@ -1,0 +1,1179 @@
+{
+	"info": {
+		"_postman_id": "45320cc7-b41e-4a20-bdf7-2bd7c3f386d9",
+		"name": "Prueas tecnicas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19368462"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:41:41 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:41:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"product_id\": 1,\n            \"product_code\": \"BRAV-001\",\n            \"product_name\": \"Balon de Futbol\",\n            \"product_price\": \"29.30\",\n            \"product_image\": \"\",\n            \"product_active\": 1,\n            \"product_delete\": 0,\n            \"product_created_by\": 1,\n            \"product_created_at\": \"2023-09-22 04:40:43.720123+00\",\n            \"product_modified_by\": null,\n            \"product_modified_at\": null,\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        },\n        {\n            \"product_id\": 2,\n            \"product_code\": \"BRAV-002\",\n            \"product_name\": \"Balon de Basket\",\n            \"product_price\": \"22.00\",\n            \"product_image\": \"https://wilsonstore.com.co/wp-content/uploads/2023/02/WTB9300XB07-1_0000_WTB9300XB_0_7_NBA_DRV_BSKT_OR.png.cq5dam.web_.1200.1200.jpg\",\n            \"product_active\": 1,\n            \"product_delete\": 0,\n            \"product_created_by\": 1,\n            \"product_created_at\": \"2023-09-22 04:40:43.720123+00\",\n            \"product_modified_by\": null,\n            \"product_modified_at\": null,\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        },\n        {\n            \"product_id\": 3,\n            \"product_code\": \"BRAV-003\",\n            \"product_name\": \"Pelota de tenis\",\n            \"product_price\": \"8.99\",\n            \"product_image\": \"https://assets.stickpng.com/images/580b585b2edbce24c47b2b90.png\",\n            \"product_active\": 1,\n            \"product_delete\": 0,\n            \"product_created_by\": 1,\n            \"product_created_at\": \"2023-09-22 04:40:43.720123+00\",\n            \"product_modified_by\": null,\n            \"product_modified_at\": null,\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        },\n        {\n            \"product_id\": 4,\n            \"product_code\": \"BRAV-004\",\n            \"product_name\": \"Raqueta\",\n            \"product_price\": \"49.50\",\n            \"product_image\": \"https://larrytennis.com/cdn/shop/products/WR074011U_9_900x.jpg\",\n            \"product_active\": 1,\n            \"product_delete\": 0,\n            \"product_created_by\": 1,\n            \"product_created_at\": \"2023-09-22 04:40:43.720123+00\",\n            \"product_modified_by\": null,\n            \"product_modified_at\": null,\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        },\n        {\n            \"product_id\": 5,\n            \"product_code\": \"BRAV-005\",\n            \"product_name\": \"Palo de Golf\",\n            \"product_price\": \"85.99\",\n            \"product_image\": \"https://i.ebayimg.com/thumbs/images/g/TEsAAOSwIK5fsjRp/s-l225.jpg\",\n            \"product_active\": 1,\n            \"product_delete\": 0,\n            \"product_created_by\": 1,\n            \"product_created_at\": \"2023-09-22 04:40:43.720123+00\",\n            \"product_modified_by\": null,\n            \"product_modified_at\": null,\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        }\n    ],\n    \"duration\": \"1.7582619190216 seconds\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/products/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "products/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/products/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:53:06 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:53:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=UTF-8"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								}
+							],
+							"cookie": [],
+							"body": "{\"success\":true,\"data\":[{\"product_id\":6,\"product_code\":\"BRAV-007\",\"product_name\":\"Zapatos deportivos\",\"product_price\":\"49.50\",\"product_image\":null,\"product_active\":null,\"product_delete\":0,\"product_created_by\":1,\"product_created_at\":\"2023-09-22 05:49:33.032473+00\",\"product_modified_by\":null,\"product_modified_at\":null,\"created_by\":\"Daniel Bol\\u00edvar\",\"modified_by\":null}],\"duration\":\"1.7295141220093 seconds\"}"
+						}
+					]
+				},
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product_code\": \"BRAV-007\",\n    \"product_name\": \"Zapatos deportivos\",\n    \"product_price\": \"49.50\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"product_code\": \"BRAV-007\",\n    \"product_name\": \"Zapatos deportivos\",\n    \"product_price\": \"49.50\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:49:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:49:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"0010\",\n    \"data\": {\n        \"product_id\": 6,\n        \"product_code\": \"BRAV-007\",\n        \"product_name\": \"Zapatos deportivos\",\n        \"product_price\": \"49.50\",\n        \"product_image\": null,\n        \"product_active\": null,\n        \"product_delete\": 0,\n        \"product_created_by\": 1,\n        \"product_created_at\": \"2023-09-22 05:49:33.032473+00\",\n        \"product_modified_by\": null,\n        \"product_modified_at\": null\n    },\n    \"duration\": \"1.7559320926666 seconds\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/products/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"product_code\": \"BRAV-010\",\n    \"product_name\": \"Zapatos deportivos\",\n    \"product_price\": \"49.50\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/products/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"product_code\": \"BRAV-010\",\n    \"product_name\": \"Zapatos deportivos\",\n    \"product_price\": \"49.50\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/products/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:55:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:55:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"0009\",\n    \"duration\": \"1.7489910125732 seconds\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/products/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/products/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/products/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:56:55 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:56:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"0011\",\n    \"duration\": \"1.7483971118927 seconds\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "quotes",
+			"item": [
+				{
+					"name": "/quote",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/quote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"quote"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quote",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/quote",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"quote"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 06:24:23 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 06:24:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"quote_id\": 1,\n            \"quote_name\": \"Daniel\",\n            \"quote_lastname\": \"Bolivar\",\n            \"quote_direction\": \"Cra 7\",\n            \"quote_total\": \"50.00\",\n            \"quote_created_by\": 1,\n            \"quote_created_at\": \"2023-09-22 06:15:17.227374+00\",\n            \"quote_modified_by\": null,\n            \"quote_modified_at\": null,\n            \"quote_detail\": [\n                {\n                    \"quotedetail_id\": 1,\n                    \"quote_id\": 1,\n                    \"product_id\": 1,\n                    \"quotedetail_quantity\": 1,\n                    \"quotedetail_unit_price\": 10,\n                    \"quotedetail_subtotal\": 10,\n                    \"quotedetail_created_by\": 1,\n                    \"quotedetail_created_at\": \"2023-09-22T06:15:45.722628+00:00\",\n                    \"quotedetail_modified_by\": null,\n                    \"quotedetail_modified_at\": null\n                },\n                {\n                    \"quotedetail_id\": 2,\n                    \"quote_id\": 1,\n                    \"product_id\": 2,\n                    \"quotedetail_quantity\": 2,\n                    \"quotedetail_unit_price\": 20,\n                    \"quotedetail_subtotal\": 40,\n                    \"quotedetail_created_by\": 1,\n                    \"quotedetail_created_at\": \"2023-09-22T06:16:03.683471+00:00\",\n                    \"quotedetail_modified_by\": null,\n                    \"quotedetail_modified_at\": null\n                }\n            ],\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        },\n        {\n            \"quote_id\": 2,\n            \"quote_name\": \"Daniel\",\n            \"quote_lastname\": \"Bolivar\",\n            \"quote_direction\": \"Cra 6\",\n            \"quote_total\": \"10.00\",\n            \"quote_created_by\": 1,\n            \"quote_created_at\": \"2023-09-22 06:24:16.808382+00\",\n            \"quote_modified_by\": null,\n            \"quote_modified_at\": null,\n            \"quote_detail\": [],\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        }\n    ],\n    \"duration\": \"1.7483820915222 seconds\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/quote/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/quote/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"quote",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "quote/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/quote/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"quote",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 06:26:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 06:26:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"quote_id\": 1,\n            \"quote_name\": \"Daniel\",\n            \"quote_lastname\": \"Bolivar\",\n            \"quote_direction\": \"Cra 7\",\n            \"quote_total\": \"50.00\",\n            \"quote_created_by\": 1,\n            \"quote_created_at\": \"2023-09-22 06:15:17.227374+00\",\n            \"quote_modified_by\": null,\n            \"quote_modified_at\": null,\n            \"quote_detail\": [\n                {\n                    \"quotedetail_id\": 1,\n                    \"quote_id\": 1,\n                    \"product_id\": 1,\n                    \"quotedetail_quantity\": 1,\n                    \"quotedetail_unit_price\": 10,\n                    \"quotedetail_subtotal\": 10,\n                    \"quotedetail_created_by\": 1,\n                    \"quotedetail_created_at\": \"2023-09-22T06:15:45.722628+00:00\",\n                    \"quotedetail_modified_by\": null,\n                    \"quotedetail_modified_at\": null\n                },\n                {\n                    \"quotedetail_id\": 2,\n                    \"quote_id\": 1,\n                    \"product_id\": 2,\n                    \"quotedetail_quantity\": 2,\n                    \"quotedetail_unit_price\": 20,\n                    \"quotedetail_subtotal\": 40,\n                    \"quotedetail_created_by\": 1,\n                    \"quotedetail_created_at\": \"2023-09-22T06:16:03.683471+00:00\",\n                    \"quotedetail_modified_by\": null,\n                    \"quotedetail_modified_at\": null\n                }\n            ],\n            \"created_by\": \"Daniel Bolívar\",\n            \"modified_by\": null\n        }\n    ],\n    \"duration\": \"1.7367720603943 seconds\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/quote",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quote_name\": \"Daniel1\",\n    \"quote_lastname\": \"Bolivar1\",\n    \"quote_direction\": \"Cra 71\",\n    \"quote_total\": \"5.00\",\n    \"quote_detail\": [\n        {\n            \"product_id\": 1,\n            \"quotedetail_quantity\": 1,\n            \"quotedetail_unit_price\": 10,\n            \"quotedetail_subtotal\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/quote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"quote"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"product_code\": \"BRAV-007\",\n    \"product_name\": \"Zapatos deportivos\",\n    \"product_price\": \"49.50\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:49:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 05:49:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"0010\",\n    \"data\": {\n        \"product_id\": 6,\n        \"product_code\": \"BRAV-007\",\n        \"product_name\": \"Zapatos deportivos\",\n        \"product_price\": \"49.50\",\n        \"product_image\": null,\n        \"product_active\": null,\n        \"product_delete\": 0,\n        \"product_created_by\": 1,\n        \"product_created_at\": \"2023-09-22 05:49:33.032473+00\",\n        \"product_modified_by\": null,\n        \"product_modified_at\": null\n    },\n    \"duration\": \"1.7559320926666 seconds\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/quote/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quote_name\": \"Daniel1\",\n    \"quote_lastname\": \"Bolivar\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/quote/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"quote",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/quote/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "{{token}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"quote_name\": \"Daniel1\",\n    \"quote_lastname\": \"Bolivar\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/quote/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"quote",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 06:52:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Sep 2023 06:52:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.23"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization, authorization"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"0009\",\n    \"duration\": \"1.7321310043335 seconds\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
